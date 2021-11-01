@@ -1,0 +1,21 @@
+1 Add Inventory manager page
+    1.1 View inventory page use table same as bill
+    1.2 Edit Inventory i.e stock of item, delete item, Add product (add stock calculation to the bill page)
+        1.2.1 Add products through bill page
+
+2 complete the invoice page
+    2.1 save the bills correctly in database i.e track address and other bill info in the database and also make changes in the inventory page
+    2.2 Add print to pdf
+    
+
+
+DATABASE QUERIES 
+select max invoice number
+    SELECT MAX(invoice_no) FROM bill
+
+insert into inventory
+    INSERT INTO products(uid, product_name ,  gst ,  discount ,  unit ,  mrp ,  rate ,  purchase_price ,  hsn ,  stock ) VALUES ('" . $_SESSION["uid"] . "','" . $_POST["productname"] . "','" . $_POST["productname"] . "','" . $_POST["productname"] . "','" . $_POST["productname"] . "','" . $_POST["productname"] . "','" . $_POST["productname"] . "','" . $_POST["productname"] . "','" . $_POST["productname"] . "','" . $_POST["productname"] . "')
+
+update into inventory
+
+Array ( [insert] => 1 [productname] => fadfad [productid] => fadf [productpurpri] => [productmrp] => [productrate] => dafadfd [productunit] => [productdis] => [gst] => 0 [productstock] => 333 [save] => Add )
